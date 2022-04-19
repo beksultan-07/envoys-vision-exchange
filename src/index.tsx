@@ -11,6 +11,8 @@ const GlobalStyle = createGlobalStyle`
   body{
      height: 100%;
      overflow-x: hidden;
+    scroll-behavior: smooth;
+
   }
   body {
     margin: 0;
@@ -34,23 +36,23 @@ const GlobalStyle = createGlobalStyle`
   }
 
   @font-face {
-    font-family: 'Rany'; 
+    font-family: 'Rany700'; 
     src: url(${require('./fonts/Rany-Bold.otf')});
     font-weight: 700;
    }
    @font-face {
-    font-family: 'Rany'; 
+    font-family: 'Rany500'; 
     src: url(${require('./fonts/Rany-Medium.otf')});
     font-weight: 500;
    }
    @font-face {
-    font-family: 'Rany'; 
+    font-family: 'Rany400'; 
     src: url(${require('./fonts/Rany 400.otf')});
     font-weight: 400;
    }
 
    .swiper-pagination-bullet-active {
-      background: #FFEE2D;
+      background: #FFA760;
     }
     .swiper {
       padding: 35px 0;

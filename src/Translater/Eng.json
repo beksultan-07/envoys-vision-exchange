@@ -110,6 +110,16 @@
                     }
                 }
             }
-        }        
+        },
+        "Documents":{
+            "title": "Documents",
+            "btn": "Download"
+        },
+        "OurTeam": {
+            "title": "Our Team"
+        },
+        "Partners": {
+            "title": "Partners"
+        }      
     }
 }

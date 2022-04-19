@@ -2,9 +2,12 @@ import React from 'react'
 import styled from 'styled-components'
 import Banner from '../../components/Home/Banner/Banner'
 import Benefits from '../../components/Home/Benefits/Benefits'
+import Companies from '../../components/Home/Companies/Companies'
 import Documents from '../../components/Home/Documents/Documents'
 import IFeruemDesc from '../../components/Home/IFeruemDesc/IFeruemDesc'
 import OurTeam from '../../components/Home/OurTeam/OurTeam'
+import Partners from '../../components/Home/Partners/Partners'
+import RedirectComponents from '../../components/Home/Redirects/Redirect'
 import RoadMap from '../../components/Home/RoadMap/RoadMap'
 import WalletConnect from '../../components/Home/WalletConnect/WalletConnect'
 
@@ -24,11 +27,14 @@ const Home:React.FC = () => {
         <HomeStyle>
             <Banner/>
             <Benefits/>
-            <WalletConnect/>
+            <Companies/>
+            {/* <WalletConnect/> */}
             <IFeruemDesc/>
             <RoadMap/>
+            <RedirectComponents/>
             <Documents/>
             <OurTeam/>
+            <Partners/>
         </HomeStyle>
     )
 }

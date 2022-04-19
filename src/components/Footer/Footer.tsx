@@ -13,7 +13,7 @@ const Footer:React.FC = () => {
 
 
   return (
-    <FooterWrap id='aboutUs'>
+    <FooterWrap id='Contact'>
       <Container>
         <FooterContent justify='space-between' align='flex-start'>
           <HeaderLogoWrap to='/' style={{margin: '0', padding: 0}}>
@@ -26,15 +26,15 @@ const Footer:React.FC = () => {
 
             <MiniText margin='0 0 5px 0'>
               {t("Footer.Block1.links.link1")}
-              <FooterLink to='#' style={{color: '#FFEE2D', margin: '0 0 0 5px'}}>hello@metahash.org</FooterLink>
+              <FooterLink to='#' style={{color: '#FFA760', margin: '0 0 0 5px'}}>hello@metahash.org</FooterLink>
             </MiniText>
             <MiniText margin='5px 0'>
               {t("Footer.Block1.links.link2")}
-              <FooterLink to='#' style={{color: '#FFEE2D', margin: '0 0 0 5px'}}>support@metahash.org</FooterLink>
+              <FooterLink to='#' style={{color: '#FFA760', margin: '0 0 0 5px'}}>support@metahash.org</FooterLink>
             </MiniText>
             <MiniText margin='5px 0'>
               {t("Footer.Block1.links.link3")}
-              <FooterLink to='#' style={{color: '#FFEE2D', margin: '0 0 0 5px'}}>pr@metahash.org</FooterLink>
+              <FooterLink to='#' style={{color: '#FFA760', margin: '0 0 0 5px'}}>pr@metahash.org</FooterLink>
             </MiniText>
           </FooterLinks>
 

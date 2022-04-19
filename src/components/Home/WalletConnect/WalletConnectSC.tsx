@@ -94,7 +94,7 @@ export const WCLBlock = styled.div`
         font-weight: 600;
         font-size: 14px;
         line-height: 23px;
-        color: #FFEE2D;
+        color: #FFA760;
     }
 ` 
 
@@ -105,7 +105,7 @@ export const WCLBlock2 = styled(WCLBlock)`
     }
     :after{
         content: 'MetaUFO';
-        color: #FFEE2D;
+        color: #FFA760;
         font-family: 'Inter';
         font-style: normal;
         font-weight: 400;
@@ -172,7 +172,7 @@ export const WCLBtn = styled(BannerBtn)`
         margin: 40px 0 0;
 
         span{
-            font-family: 'Rany';
+            font-family: 'Rany400';
             font-style: normal;
             font-weight: 400;
             font-size: 20px;
@@ -205,7 +205,7 @@ export const WCLink = styled(Link)`
     font-size: 14px;
     line-height: 23px;
     text-decoration-line: underline;
-    color: #FFEE2D;
+    color: #4478BB;
 `
 
 export const WCUl = styled.ul`
@@ -214,7 +214,7 @@ export const WCUl = styled.ul`
 `
 
 export const WCItem = styled.li`
-    border-bottom: 1px dashed #FFEE2D;
+    border-bottom: 1px dashed #4478BB;
     margin: ;
     margin: 20px 0 0;
 `

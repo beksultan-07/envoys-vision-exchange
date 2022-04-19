@@ -3,117 +3,118 @@ import { useCallback, useRef } from "react";
 import { BlockTitle } from '../../../uikit/fonts'
 import { Container, Flex } from '../../../uikit/uikit'
 import { BannerBtn } from '../Banner/BannerSC'
-import { DocItems, DocWrap, DocImg, DocTitle } from './DocumentsSC'
+import { DocItems, DocWrap, DocImg, DocTitle, DocBtn } from './DocumentsSC'
+import {useTranslation} from "react-i18next";
+import PdfToImage from '../../PdfToImage/PdfToImage';
 
 
 const Documents:React.FC = () => {
-    const file = require('../Docs/Листинговые требования.pdf') 
+    const File = require('../Docs/Листинговые требования.pdf') 
 
-    const ArrowRightIcon = require('../../../assets/home/arrowRightBlack.svg')['default']
-    const [image, setImage] = React.useState("");
+    const ArrowDown = require('../../../assets/arrowDown.svg')['default']
 
-    React.useEffect(() => {
-        
-    }, [])
-    
+    const {t} = useTranslation()
 
     return (
-        <Container>
-            <Flex align='center' direction='column'>
-                <BlockTitle color='#F6F6F6'>Documents</BlockTitle>
-                <DocWrap>
+            <Container id={'Documents'}>
+                <Flex align='center' direction='column'>
+                    <BlockTitle color='#F6F6F6'>
+                        {t("Home.Documents.title")}
+                    </BlockTitle>
 
-                    <DocItems>
-                        <img src={file}/>
-                        <DocTitle>Methodology of Securities Valuation</DocTitle>
-                        <a href='#' target='_blank' style={{width: '100%'}}>
-                            <BannerBtn style={{width: '100%'}}>
-                                <span>Download</span>
-                                <img src={ArrowRightIcon}/>
-                            </BannerBtn>
-                        </a>
-                    </DocItems>
+                    <DocWrap>
 
-                    <DocItems>
-                        <img src={file}/>
-                        <DocTitle>Methodology of Securities Valuation</DocTitle>
-                        <a href='#' target='_blank' style={{width: '100%'}}>
-                            <BannerBtn style={{width: '100%'}}>
-                                <span>Download</span>
-                                <img src={ArrowRightIcon}/>
-                            </BannerBtn>
-                        </a>
-                    </DocItems>
+                        <DocItems>
+                            <a href={File} target='_blank'>
+                                <PdfToImage file={File}/>
+                            </a>
+                            <DocTitle>Methodology of Securities Valuation</DocTitle>
+                                <DocBtn href={File} target='_blank' download>
+                                    <span>{t("Home.Documents.btn")}</span>
+                                    <img src={ArrowDown}/>
+                                </DocBtn>
+                        </DocItems>
 
-                    <DocItems>
-                        <img src={file}/>
-                        <DocTitle>Methodology of Securities Valuation</DocTitle>
-                        <a href='#' target='_blank' style={{width: '100%'}}>
-                            <BannerBtn style={{width: '100%'}}>
-                                <span>Download</span>
-                                <img src={ArrowRightIcon}/>
-                            </BannerBtn>
-                        </a>
-                    </DocItems>
+                        <DocItems>
+                            <a href={File} target='_blank'>
+                                <PdfToImage file={File}/>
+                            </a>
+                            <DocTitle>Methodology of Securities Valuation</DocTitle>
+                                <DocBtn href={File} target='_blank' download>
+                                    <span>{t("Home.Documents.btn")}</span>
+                                    <img src={ArrowDown}/>
+                                </DocBtn>
+                        </DocItems>
 
-                    <DocItems>
-                        <img src={file}/>
-                        <DocTitle>Methodology of Securities Valuation</DocTitle>
-                        <a href='#' target='_blank' style={{width: '100%'}}>
-                            <BannerBtn style={{width: '100%'}}>
-                                <span>Download</span>
-                                <img src={ArrowRightIcon}/>
-                            </BannerBtn>
-                        </a>
-                    </DocItems>
+                        <DocItems>
+                            <a href={File} target='_blank'>
+                                <PdfToImage file={File}/>
+                            </a>
+                            <DocTitle>Methodology of Securities Valuation</DocTitle>
+                                <DocBtn href={File} target='_blank' download>
+                                    <span>{t("Home.Documents.btn")}</span>
+                                    <img src={ArrowDown}/>
+                                </DocBtn>
+                        </DocItems>
 
-                    <DocItems>
-                        <img src={file}/>
-                        <DocTitle>Methodology of Securities Valuation</DocTitle>
-                        <a href='#' target='_blank' style={{width: '100%'}}>
-                            <BannerBtn style={{width: '100%'}}>
-                                <span>Download</span>
-                                <img src={ArrowRightIcon}/>
-                            </BannerBtn>
-                        </a>
-                    </DocItems>
+                        <DocItems>
+                            <a href={File} target='_blank'>
+                                <PdfToImage file={File}/>
+                            </a>
+                            <DocTitle>Methodology of Securities Valuation</DocTitle>
+                                <DocBtn href={File} target='_blank' download>
+                                    <span>{t("Home.Documents.btn")}</span>
+                                    <img src={ArrowDown}/>
+                                </DocBtn>
+                        </DocItems>
 
-                    <DocItems>
-                        <img src={file}/>
-                        <DocTitle>Methodology of Securities Valuation</DocTitle>
-                        <a href='#' target='_blank' style={{width: '100%'}}>
-                            <BannerBtn style={{width: '100%'}}>
-                                <span>Download</span>
-                                <img src={ArrowRightIcon}/>
-                            </BannerBtn>
-                        </a>
-                    </DocItems>
+                        <DocItems>
+                            <a href={File} target='_blank'>
+                                <PdfToImage file={File}/>
+                            </a>
+                            <DocTitle>Methodology of Securities Valuation</DocTitle>
+                                <DocBtn href={File} target='_blank' download>
+                                    <span>{t("Home.Documents.btn")}</span>
+                                    <img src={ArrowDown}/>
+                                </DocBtn>
+                        </DocItems>
 
-                    <DocItems>
-                        <img src={file}/>
-                        <DocTitle>Methodology of Securities Valuation</DocTitle>
-                        <a href='#' target='_blank' style={{width: '100%'}}>
-                            <BannerBtn style={{width: '100%'}}>
-                                <span>Download</span>
-                                <img src={ArrowRightIcon}/>
-                            </BannerBtn>
-                        </a>
-                    </DocItems>
+                        <DocItems>
+                            <a href={File} target='_blank'>
+                                <PdfToImage file={File}/>
+                            </a>
+                            <DocTitle>Methodology of Securities Valuation</DocTitle>
+                                <DocBtn href={File} target='_blank' download>
+                                    <span>{t("Home.Documents.btn")}</span>
+                                    <img src={ArrowDown}/>
+                                </DocBtn>
+                        </DocItems>
 
-                    <DocItems>
-                        <img src={file}/>
-                        <DocTitle>Methodology of Securities Valuation</DocTitle>
-                        <a href='#' target='_blank' style={{width: '100%'}}>
-                            <BannerBtn style={{width: '100%'}}>
-                                <span>Download</span>
-                                <img src={ArrowRightIcon}/>
-                            </BannerBtn>
-                        </a>
-                    </DocItems>
+                        <DocItems>
+                            <a href={File} target='_blank'>
+                                <PdfToImage file={File}/>
+                            </a>
+                            <DocTitle>Methodology of Securities Valuation</DocTitle>
+                                <DocBtn href={File} target='_blank' download>
+                                    <span>{t("Home.Documents.btn")}</span>
+                                    <img src={ArrowDown}/>
+                                </DocBtn>
+                        </DocItems>
 
-                </DocWrap>
-            </Flex>
-        </Container>
+                        <DocItems>
+                            <a href={File} target='_blank'>
+                                <PdfToImage file={File}/>
+                            </a>
+                            <DocTitle>Methodology of Securities Valuation</DocTitle>
+                                <DocBtn href={File} target='_blank' download>
+                                    <span>{t("Home.Documents.btn")}</span>
+                                    <img src={ArrowDown}/>
+                                </DocBtn>
+                        </DocItems>
+
+                    </DocWrap>
+                </Flex>
+            </Container>
     )
 }
 

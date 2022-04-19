@@ -25,7 +25,7 @@ export const HeaderLogo = styled.img`
 `
 
 export const HeaderLogoText = styled.p`
-    font-family: 'Rany';
+    font-family: 'Rany700';
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -53,11 +53,11 @@ export const HeaderLinks = styled.nav`
 `
 
 
-export const HeaderLink = styled.button`
+export const HeaderLink = styled.a`
     border: none;
     outline: none;
     background: none;
-    font-family: 'Rany';
+    font-family: 'Rany400';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -66,9 +66,14 @@ export const HeaderLink = styled.button`
     color: #FFFFFF;
     cursor: pointer;
     margin: 0 20px;
+    transition: .3s;
     :first-child{
         margin: 0;
     }
+
+    /* :hover{
+        color: #FFEE2D;
+    } */
 ` 
 
 export const LangDropDown = styled.img`
@@ -109,6 +114,7 @@ type LangProps = {
 
 export const LDDWrap = styled.div<LangProps>`
     position: absolute;
+    z-index: 3;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -147,16 +153,18 @@ export const BMWrap = styled.div<BurgerProps>`
     padding: 20px;
 `
 
-export const BMLink = styled.button`
+export const BMLink = styled.a`
     border: none;
     background: none;
-    font-family: 'Rany';
+    font-family: 'Rany700';
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 32px;
     color: #171717;
     margin: 25px 0 ;
+
+    
     /* :last-child{
         margin:  0;
     } */

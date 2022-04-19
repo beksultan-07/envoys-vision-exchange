@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { BiggerText, BlockTitle, DateText } from '../../../uikit/fonts'
 import { Container, Flex } from '../../../uikit/uikit'
 import { OTIconWrap, OTItems, OTWrap, OTImg, OTIcon } from './OurTeamSC'
+import {useTranslation} from "react-i18next";
 
 
 const OurTeam:React.FC = () => {
@@ -12,11 +13,13 @@ const OurTeam:React.FC = () => {
 
     const Person = require('../../../assets/person.jpg')
     
+    const {t} = useTranslation()
+
     
   return (
-    <Container>
+    <Container id={'Team'}>
             <Flex align='center' direction='column' margin='100px 0 0'>
-                <BlockTitle margin='0 0 50px' color='#F6F6F6'>Documents</BlockTitle>
+                <BlockTitle margin='0 0 50px' color='#F6F6F6'>{t("Home.OurTeam.title")}</BlockTitle>
                 <OTWrap>
 
                     <OTItems>

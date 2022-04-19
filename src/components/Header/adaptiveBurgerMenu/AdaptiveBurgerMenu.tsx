@@ -49,10 +49,10 @@ const AdaptiveBurgerMenu:React.FC<Props> = (props) => {
 
         <Flex direction='column' align='center' justify='space-between' margin='50px 0'>
             <Flex direction='column' align='flex-start'>
-                <BMLink>Documents</BMLink>
-                <BMLink>Roadmap</BMLink>
-                <BMLink>Team</BMLink>
-                <BMLink>Contact</BMLink>
+                <BMLink href='#Documents'>Documents</BMLink>
+                <BMLink href='#Roadmap'>Roadmap</BMLink>
+                <BMLink href='#Team'>Team</BMLink>
+                <BMLink href='#Contact'>Contact</BMLink>
 
     
                 <RightMenu1 margin='0'>

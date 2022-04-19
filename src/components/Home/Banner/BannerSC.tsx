@@ -22,15 +22,15 @@ export const BannerTexts = styled(Flex)`
 
 `
 
-export const BannerBtn = styled.button`
-    background: #FFEE2D;
+export const BannerBtn = styled.a`
+    background: #FFA760;
     padding: 14px 0;
     cursor: pointer;
     width: 280px;
     display: flex;
     outline: none;
     border: none;
-    border-radius: 20px;
+    border-radius: 10px;
     align-items: center;
     justify-content: center;
     @media(max-width: 760px){
@@ -38,7 +38,7 @@ export const BannerBtn = styled.button`
     }
 
     span{
-        font-family: 'Rany';
+        font-family: 'Rany700';
         font-style: normal;
         font-weight: 700;
         font-size: 24px;

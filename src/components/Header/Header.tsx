@@ -23,14 +23,16 @@ const Header:React.FC<Props> = (props) => {
 
     const [showBurgerMenu, setShowBurgerMenu] = React.useState(false)
 
+    React.useEffect(() => {
+        
+    }, [])
+    
+
 
     function checkLang(){
-        if(props.lang === 'en'){
-            return LangIco1
-        }
-        if(props.lang === 'ru'){
-            return LangIco2
-        }
+        if(props.lang === 'en') return LangIco1
+        if(props.lang === 'ru') return LangIco2
+
     }
 
     function langHandler(e: React.MouseEvent){
@@ -38,6 +40,12 @@ const Header:React.FC<Props> = (props) => {
         props.setShowDD(true)
     }
 
+    const scrollToSection = (className: string) => {
+        // className = '#' + className
+        console.log(className);
+      };
+
+    
     return (
         <HeaderWrap>
             <Container>
@@ -48,18 +56,20 @@ const Header:React.FC<Props> = (props) => {
                     </HeaderLogoWrap> 
     
                     <HeaderLinks>
-                        <HeaderLink 
-                            // onClick={roadMapSection.onClick}
-                        >Documents</HeaderLink>
-                        <HeaderLink
-                            // onClick={aboutUsSection.onClick}
-                        >Roadmap</HeaderLink>
-                        <HeaderLink
-                            // onClick={aboutUsSection.onClick}
-                        >Team</HeaderLink>
-                        <HeaderLink
-                            // onClick={aboutUsSection.onClick}
-                        >Contact</HeaderLink>
+                        
+                        <HeaderLink href='#Documents'>
+                            Documents
+                        </HeaderLink>
+                        <HeaderLink href='#Roadmap'>
+                            Roadmap
+                        </HeaderLink>
+                        <HeaderLink href='#Team'>
+                            Team
+                        </HeaderLink>
+                        <HeaderLink href='#Contact'>
+                            Contact
+                        </HeaderLink>
+
                     </HeaderLinks>
     
                     <RightMenu margin='0 0 0 auto'>

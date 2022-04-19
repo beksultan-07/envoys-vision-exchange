@@ -22,7 +22,7 @@ const Banner:React.FC = () => {
                         {t("Home.Banner.title")}
                     </BigText>
                     <Text margin='20px 0'>{t("Home.Banner.text")}</Text>
-                    <BannerBtn>
+                    <BannerBtn href='#'>
                         <span>{t("Home.Banner.btn")}</span>
                         <img src={ArrowRightIcon}/>
                     </BannerBtn>

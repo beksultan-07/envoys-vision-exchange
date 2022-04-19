@@ -25,7 +25,7 @@ export const IFDItem = styled.li`
     flex-direction: column;
     padding: 0 20px;
     height: 255px;
-    border-right: solid 1px #FFEE2D; 
+    border-right: solid 1px #FFA760; 
     :first-child{
         padding: 0 20px 0 0; 
     }
@@ -40,13 +40,13 @@ export const IFDItem = styled.li`
     }
     @media(max-width: 576px){
         border-right: none; 
-        border-bottom: solid 1px #FFEE2D; 
+        border-bottom: solid 1px #FFA760; 
         padding: 20px 0;
     }
 `
 
 export const IFDNum = styled.h1`
-    font-family: 'Rany';
+    font-family: 'Rany700';
     font-style: normal;
     font-weight: 700;
     font-size: 128px;

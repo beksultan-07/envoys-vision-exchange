@@ -17,7 +17,7 @@ const RoadMap:React.FC = () => {
     const {t} = useTranslation()
 
     return (
-        <div style={{padding: '100px 0'}} id='roadmap'>
+        <div style={{padding: '100px 0'}} id={'Roadmap'}>
             <Container>
                 <Flex direction='column' align='center'>
                     <BlockTitle margin='50px 0' color='#FFF'>

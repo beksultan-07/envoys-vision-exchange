@@ -4,6 +4,7 @@ import { Container, Flex } from '../../../uikit/uikit'
 import { BItem, BItemImg, BItems } from './BenefitsSC'
 import {useTranslation} from "react-i18next";
 
+import ScrollableAnchor from 'react-scrollable-anchor'
 
 const Benefits:React.FC = () => {
     const Icon1 = require('../../../assets/home/benefits/icon1.svg')['default']
@@ -19,6 +20,7 @@ const Benefits:React.FC = () => {
             <Flex direction='column' align='center'>
                 <BlockTitle margin='100px 0 75px'>{t("Home.Benefits.title")}</BlockTitle>
 
+                
                 <BItems>
                     <BItem>
                         <BItemImg src={Icon1}/>
@@ -37,7 +39,7 @@ const Benefits:React.FC = () => {
                     </BItem>
                     <BItem>
                         <BItemImg src={Icon4}/>
-                        <PreTitle margin='14px 0 10px' color='#F6F6F6'>{t("Home.Forth.Second.title")}</PreTitle>
+                        <PreTitle margin='14px 0 10px' color='#F6F6F6'>{t("Home.Benefits.Forth.title")}</PreTitle>
                         <MiniText>{t("Home.Benefits.Forth.text")}</MiniText>
                     </BItem>
                 </BItems>

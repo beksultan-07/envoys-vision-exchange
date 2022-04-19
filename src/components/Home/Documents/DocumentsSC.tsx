@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { BannerBtn } from "../Banner/BannerSC";
 
 export const DocWrap = styled.ul`
     list-style: none;
@@ -27,6 +28,16 @@ export const DocItems = styled.li`
     display: flex;
     flex-direction: column;
     align-items: center;
+    h4{
+        width: 100%;
+        text-align: center;
+    }
+    canvas{
+        cursor: pointer;
+        width: 100% !important;
+        height: 100% !important;
+        border-radius: 10px;
+    }
 `
 
 export const DocImg = styled.img`
@@ -42,4 +53,15 @@ export const DocTitle = styled.h4`
     line-height: 24px;
     color: #F5F5F5;
     margin: 25px 0 60px;
+`
+
+export const DocBtn = styled(BannerBtn)`
+    width: 100%;
+    background: none;
+    span{
+        color: #FFA760;
+    }
+    img{
+        transform: rotate(270deg);
+    }
 `
