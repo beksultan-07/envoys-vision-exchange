@@ -17,6 +17,7 @@
     "@types/react-scrollable-anchor": "^0.6.1",
     "@types/styled-components": "^5.1.23",
     "@types/swiper": "^6.0.0",
+    "gh-pages": "^3.2.3",
     "i18next": "^21.6.14",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",

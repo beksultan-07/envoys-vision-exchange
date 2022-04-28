@@ -27,10 +27,7 @@ function App() {
         showDD={showDD}
       />
       <SideBar/>
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="*" element={<div>error</div>}/>
-      </Routes>
+      <Home/>
       <Footer/>
     </div>
   );
