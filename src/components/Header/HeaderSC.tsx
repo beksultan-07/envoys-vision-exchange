@@ -70,10 +70,6 @@ export const HeaderLink = styled.a`
     :first-child{
         margin: 0;
     }
-
-    /* :hover{
-        color: #FFEE2D;
-    } */
 ` 
 
 export const LangDropDown = styled.img`
@@ -156,18 +152,13 @@ export const BMWrap = styled.div<BurgerProps>`
 export const BMLink = styled.a`
     border: none;
     background: none;
-    font-family: 'Rany700';
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 32px;
     color: #171717;
     margin: 25px 0 ;
-
-    
-    /* :last-child{
-        margin:  0;
-    } */
 `
 
 export const RightMenu1 = styled(RightMenu)`
@@ -181,9 +172,6 @@ export const BMSideBarWrap = styled(Flex)`
     max-width: 100%;
     flex-wrap: wrap;
     justify-content: center;
-    /* flex-direction: column; */
-    /* display: grid;
-    grid-template-columns: repeat(2, 1fr); */
     gap: 10px;
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(50px);

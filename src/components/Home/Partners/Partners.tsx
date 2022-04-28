@@ -18,7 +18,7 @@ const Partners:React.FC = () => {
     require('../../../assets/partners/Hubspot Logo.svg')['default'],
     require('../../../assets/partners/Microsoft Logo.svg')['default'],
     require('../../../assets/partners/Walmart Logo.svg')['default'],
-    // require('../../../assets/partners/rpg.png')
+    require('../../../assets/partners/rpg.png')
   ])
 
   const {t} = useTranslation()
@@ -36,24 +36,23 @@ const Partners:React.FC = () => {
           disableOnInteraction: false,
           pauseOnMouseEnter: true,
           reverseDirection: false
-      }}
-      speed={500}
-      modules={[Autoplay ]}
-      breakpoints= {{
-        320: {
-            slidesPerView: 2,
-        },
-        502: {
-            slidesPerView: 3,
-        },
-        700: {
-          slidesPerView: 4,
-        },
-        1024: {
-            slidesPerView: 6,
-        }
-      }}
-      >
+        }}
+        speed={500}
+        modules={[Autoplay ]}
+        breakpoints= {{
+          320: {
+              slidesPerView: 2,
+          },
+          502: {
+              slidesPerView: 3,
+          },
+          700: {
+            slidesPerView: 4,
+          },
+          1024: {
+              slidesPerView: 6,
+          }
+        }}>
         {logos.map((el, index) => (
           <SwiperSlide key={index}>
             <LogoImgWrap>
@@ -72,7 +71,7 @@ const Partners:React.FC = () => {
               <LogoImgWrap key={index}>
                 <LogoImg src={el}/>
               </LogoImgWrap>
-            ))}
+            ))} 
           </LogosWrap>
         </Container>
       )
