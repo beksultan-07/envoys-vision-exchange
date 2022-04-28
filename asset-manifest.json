@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/envoys-vision-exchange/static/css/main.aae17901.css",
-    "main.js": "/envoys-vision-exchange/static/js/main.29199cfb.js",
+    "main.js": "/envoys-vision-exchange/static/js/main.b5067226.js",
     "static/media/Листинговые требования.pdf": "/envoys-vision-exchange/static/media/Листинговые требования.227ea42fbe2412422d86.pdf",
     "static/media/bg.jpg": "/envoys-vision-exchange/static/media/bg.076d112b6bac9e001559.jpg",
     "static/media/person.jpg": "/envoys-vision-exchange/static/media/person.fdbe7d2b18bdf6a2a584.jpg",
@@ -42,10 +42,10 @@
     "static/media/arrowRightBlack.svg": "/envoys-vision-exchange/static/media/arrowRightBlack.2e698016810058e4e1a6bdef0e8c3b59.svg",
     "static/media/burger.svg": "/envoys-vision-exchange/static/media/burger.4405d49c0ca0cdf07121b1fb1254ba42.svg",
     "main.aae17901.css.map": "/envoys-vision-exchange/static/css/main.aae17901.css.map",
-    "main.29199cfb.js.map": "/envoys-vision-exchange/static/js/main.29199cfb.js.map"
+    "main.b5067226.js.map": "/envoys-vision-exchange/static/js/main.b5067226.js.map"
   },
   "entrypoints": [
     "static/css/main.aae17901.css",
-    "static/js/main.29199cfb.js"
+    "static/js/main.b5067226.js"
   ]
 }
